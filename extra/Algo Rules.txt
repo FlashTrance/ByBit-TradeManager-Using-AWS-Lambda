@@ -1,4 +1,6 @@
-These are the rules I used for my modified algorithm, most of which should be represented in the Lambda code. You have to understand some of how NNFX works to totally get this, but in brief, C1, Baseline, and Volume MA (I was using a volume indicator as both Volume AND a C2 for this) are trading indicators. Based on the values of these indicators each candle close, we decide how to proceed with the trade. ATR is "Average True Range", and I also used an indicator to calculate this for me automatically.
+These are the rules I used for my modified algorithm, most of which should be represented in the Lambda code. You have to understand some of how NNFX works to totally get this,
+but in brief, C1, Baseline, and Volume MA (I was using a volume indicator as both Volume AND a C2 for this) are trading indicators. Based on the values of these indicators each
+candle close, we decide how to proceed with the trade. ATR is "Average True Range", and I also used an indicator to calculate this for me automatically.
 
 RISK MANAGEMENT:
 - SL @ 1.5x ATR
