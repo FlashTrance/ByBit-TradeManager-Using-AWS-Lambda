@@ -1,3 +1,5 @@
+These are the rules I used for my modified algorithm, most of which should be represented in the Lambda code. You have to understand some of how NNFX works to totally get this, but in brief, C1, Baseline, and Volume MA (I was using a volume indicator as both Volume AND a C2 for this) are trading indicators. Based on the values of these indicators each candle close, we decide how to proceed with the trade. ATR is "Average True Range", and I also used an indicator to calculate this for me automatically.
+
 RISK MANAGEMENT:
 - SL @ 1.5x ATR
 - HALF of entry TP @ 1x ATR
@@ -5,7 +7,7 @@ RISK MANAGEMENT:
 - IFF 1x ATR is hit, move SL to Entry price
 
 ENTRY:
-- C1 (SSL Indicator) Cross
+- C1 Cross
 - Price closed above/below Baseline for Long/Short AND is within 1x ATR of Baseline; if not within 1x ATR, must get there by 2 candles, else must wait for C1 flip or new Baseline cross
 - Volume MA cross agrees
 - NOTE: 1x ATR within 2 candles rule only applies to a Baseline cross; we can enter anytime after a C1 cross provided we eventually get within 1x ATR of Baseline
