@@ -1,0 +1,13 @@
+FRESH - Totally fresh state, looking for a new entry based on regular Entry rules
+ATR_LONG - Couldn't enter a Long trade due to ATR on last candle close, we have 2 candles before we return to a FRESH state
+ATR_SHORT - Couldn't enter a Short trade due to ATR on last candle close, we have 2 candles before we return to a FRESH state
+ATR_LONG_1 - We are 1 candle after ATR_LONG state (if next candle doesn't get inside ATR, we return to FRESH)
+ATR_SHORT_1 - We are 1 candle after ATR_SHORT state (if next candle doesn't get inside ATR, we return to FRESH)
+IN_LONG - Currently in a Long trade, haven't hit any TP
+IN_SHORT - Currently in a Short trade, haven't hit any TP
+IN_LONG_TP1 - Currently in a Long trade, we hit the first TP
+IN_SHORT_TP1 - Currently in a Short trade, we hit the first TP
+CONTINUATION - Took profit on our last trade looking to get inside ATR in any timeframe for a Continuation; if price crosses Baseline, we return to regular Entry rules
+LOST_TO_BASELINE - We lost the last trade due to a Baseline cross (must wait for C1 flip or Volume cross before state returns to FRESH)
+
+EXTRA NOTES - If SL is hit but we don't close below the Baseline, we still go into a LOST_TO_BASELINE state.
