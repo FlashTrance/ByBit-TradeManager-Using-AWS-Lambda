@@ -3,7 +3,7 @@ An AWS lambda function I wrote to manage a complex trading algorithm based on NN
 
 The process basically works as follows: 
 
- - Setting up a chart on TradingView with the required indicators on it and send those indicator values to the AWS Lambda function on every candle close (I used API Gateway to set up endpoints) 
+ - A chart is set up in TradingView with the required indicators on it and those indicator values are sent to the AWS Lambda function on every candle close (I used API Gateway to set up endpoints) 
 - The data is then stored inside a DynamoDB table because each time new values came in we need to compare them to the old values 
 - After storing the data, one of the trading algorithm functions is run based upon what the current state of the trade is (this is also stored in the DB) 
 - Finally, the function communicates with ByBit using one of the functions from a ByBit API wrapper I wrote myself to manage the trade on ByBit
