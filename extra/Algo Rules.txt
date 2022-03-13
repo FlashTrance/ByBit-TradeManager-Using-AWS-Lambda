@@ -1,0 +1,22 @@
+RISK MANAGEMENT:
+- SL @ 1.5x ATR
+- HALF of entry TP @ 1x ATR
+- HALF of entry TP @ 3x ATR
+- IFF 1x ATR is hit, move SL to Entry price
+
+ENTRY:
+- C1 (SSL Indicator) Cross
+- Price closed above/below Baseline for Long/Short AND is within 1x ATR of Baseline; if not within 1x ATR, must get there by 2 candles, else must wait for C1 flip or new Baseline cross
+- Volume MA cross agrees
+- NOTE: 1x ATR within 2 candles rule only applies to a Baseline cross; we can enter anytime after a C1 cross provided we eventually get within 1x ATR of Baseline
+- NOTE: If we lost due to a Baseline cross before hitting first TP on the previous trade, we MUST wait for either a C1 or Volume MA flip before entering next trade
+
+EXIT:
+- Price triggers 3x ATR TP
+- Price triggers SL
+- C1 flip
+- Baseline cross IFF we have not already hit first TP OR we have hit first TP and are not in a losing trade
+
+CONTINUATION:
+- If we took profit on last trade, all Entry rules apply, except we can get within 1x ATR at any time (not just 2 candles)
+- NOTE: A trade is only a Continuation if it does NOT cross the Baseline; once price closes across the Baseline, we are back to a regular Entry
